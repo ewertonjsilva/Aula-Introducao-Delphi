@@ -17,7 +17,7 @@ object frmPrincipal: TfrmPrincipal
     Top = 24
     Width = 150
     Height = 35
-    Caption = 'Exemplo01'
+    Caption = 'Exemplo 1'
     TabOrder = 0
     OnClick = btnExemplo01Click
   end
@@ -29,5 +29,14 @@ object frmPrincipal: TfrmPrincipal
     Caption = 'Atividade 1'
     TabOrder = 1
     OnClick = btnAtividade01Click
+  end
+  object btnExemplo02: TButton
+    Left = 24
+    Top = 80
+    Width = 150
+    Height = 41
+    Caption = 'Exemplo 2'
+    TabOrder = 2
+    OnClick = btnExemplo02Click
   end
 end
