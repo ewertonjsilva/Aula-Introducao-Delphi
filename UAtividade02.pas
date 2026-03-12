@@ -84,11 +84,32 @@ var sinal : String;
 begin
   sinal := lbl_sinal_alt.Caption;
 
+  n1 := StrToFloat(edt_n1_alt.Text);
+  n2 := StrToFloat(edt_n2_alt.Text);
 
   if (sinal = '+') then
   begin
-
+    resultado:= n1 + n2;
   end;
+
+  if (sinal = '-') then
+  begin
+    resultado:= n1 - n2;
+  end;
+
+  if (sinal = '÷') then
+  begin
+    resultado:= n1 / n2;
+  end;
+
+  if (sinal = 'x') then
+  begin
+    resultado:= n1 * n2;
+  end;
+
+  edt_resultado_alt.text := FormatFloat('0.00', resultado);
+
+
 end;
 
 end.
