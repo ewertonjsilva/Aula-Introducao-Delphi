@@ -9,7 +9,8 @@ uses
   UAtividade02 in 'UAtividade02.pas' {frmAtividade02},
   Vcl.Themes,
   Vcl.Styles,
-  UAtividade26 in 'UAtividade26.pas' {frmAtividade26};
+  UAtividade26 in 'UAtividade26.pas' {frmAtividade26},
+  UAtividade27 in 'UAtividade27.pas' {frmAtividade27};
 
 {$R *.res}
 
@@ -23,5 +24,6 @@ begin
   Application.CreateForm(TfrmExemplo02, frmExemplo02);
   Application.CreateForm(TfrmAtividade02, frmAtividade02);
   Application.CreateForm(TfrmAtividade26, frmAtividade26);
+  Application.CreateForm(TfrmAtividade27, frmAtividade27);
   Application.Run;
 end.
