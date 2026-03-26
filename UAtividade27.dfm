@@ -2,7 +2,7 @@ object frmAtividade27: TfrmAtividade27
   Left = 0
   Top = 0
   Caption = 'frmAtividade27'
-  ClientHeight = 319
+  ClientHeight = 352
   ClientWidth = 624
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -53,7 +53,6 @@ object frmAtividade27: TfrmAtividade27
       Align = alClient
       CharCase = ecUpperCase
       TabOrder = 0
-      Text = 'DSA'
       ExplicitHeight = 40
     end
     object btnCalculaMedia: TBitBtn
@@ -177,18 +176,17 @@ object frmAtividade27: TfrmAtividade27
       NumGlyphs = 2
       TabOrder = 1
       WordWrap = True
+      OnClick = btnCalculaMediaClick
     end
   end
   object pnlSecao2: TPanel
     Left = 0
     Top = 101
     Width = 624
-    Height = 160
-    Align = alClient
+    Height = 108
     AutoSize = True
     BevelOuter = bvNone
     TabOrder = 1
-    ExplicitTop = 61
     object pnlSecao2Label: TPanel
       Left = 0
       Top = 0
@@ -397,6 +395,7 @@ object frmAtividade27: TfrmAtividade27
           Align = alClient
           Alignment = taCenter
           NumbersOnly = True
+          ReadOnly = True
           TabOrder = 0
           ExplicitHeight = 40
         end
@@ -405,25 +404,24 @@ object frmAtividade27: TfrmAtividade27
   end
   object pnlSecao3: TPanel
     Left = 0
-    Top = 261
+    Top = 232
     Width = 624
-    Height = 58
-    Align = alBottom
+    Height = 120
     BevelOuter = bvNone
     TabOrder = 2
-    ExplicitTop = 207
     object lblResultadoMedia: TLabel
       AlignWithMargins = True
       Left = 3
       Top = 3
       Width = 618
-      Height = 52
+      Height = 114
       Align = alClient
       Alignment = taCenter
       Layout = tlCenter
       WordWrap = True
-      ExplicitTop = 6
-      ExplicitHeight = 49
+      ExplicitLeft = 6
+      ExplicitTop = 0
+      ExplicitHeight = 55
     end
   end
 end

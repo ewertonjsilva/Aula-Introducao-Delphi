@@ -3,7 +3,8 @@ unit UAtividade27;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons, Vcl.ExtCtrls;
 
 type
@@ -33,6 +34,7 @@ type
     pnlSecao3: TPanel;
     lblResultadoMedia: TLabel;
     procedure FormCreate(Sender: TObject);
+    procedure btnCalculaMediaClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -46,9 +48,32 @@ implementation
 
 {$R *.dfm}
 
+procedure TfrmAtividade27.btnCalculaMediaClick(Sender: TObject);
+var
+  n1, n2, n3, n4, soma, media: Double;
+  nome, mensagem : String;
+begin
+
+  nome := edtNome.Text;
+  n1 := StrToFloat(edtN1.Text);
+  n2 := StrToFloat(edtN2.Text);
+  n3 := StrToFloat(edtN3.Text);
+  n4 := StrToFloat(edtN4.Text);
+
+  soma := n1 + n2 + n3 + n4;
+
+  media := soma / 4;
+
+  edtMedia.Text := FormatFloat('0.00', media);
+
+  mensagem := 'Aluna(o): ' + nome + sLineBreak + 'Média: ' + FormatFloat('0.00', media);
+  lblResultadoMedia.Caption := mensagem;
+
+end;
+
 procedure TfrmAtividade27.FormCreate(Sender: TObject);
 begin
-// Define a largura mínima como 300 pixels
+  // Define a largura mínima como 300 pixels
   Self.Constraints.MinWidth := 358;
   // Opcional: definir altura mínima
   Self.Constraints.MinHeight := 640;
