@@ -154,6 +154,10 @@
             <Form>frmAtividade27</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="UAtividadeSenha.pas">
+            <Form>frmAtividadeSenha</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

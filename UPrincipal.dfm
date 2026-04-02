@@ -66,4 +66,13 @@ object frmPrincipal: TfrmPrincipal
     TabOrder = 5
     OnClick = btnAtividade27Click
   end
+  object btnAtividadeSenha: TButton
+    Left = 431
+    Top = 21
+    Width = 185
+    Height = 41
+    Caption = 'Atividade Senha'
+    TabOrder = 6
+    OnClick = btnAtividadeSenhaClick
+  end
 end
