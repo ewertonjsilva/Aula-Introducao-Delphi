@@ -158,6 +158,10 @@
             <Form>frmAtividadeSenha</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="UMensagem.pas">
+            <Form>frmMensagem</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
