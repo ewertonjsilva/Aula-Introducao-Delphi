@@ -162,6 +162,10 @@
             <Form>frmMensagem</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="Uatv43.pas">
+            <Form>frmAtv43</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
