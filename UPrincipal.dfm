@@ -93,4 +93,22 @@ object frmPrincipal: TfrmPrincipal
     TabOrder = 8
     OnClick = btnAtividade43Click
   end
+  object btnExemplo24: TButton
+    Left = 24
+    Top = 143
+    Width = 150
+    Height = 42
+    Caption = 'Exemplo 24'
+    TabOrder = 9
+    OnClick = btnExemplo24Click
+  end
+  object btnAtividade46: TButton
+    Left = 448
+    Top = 199
+    Width = 176
+    Height = 42
+    Caption = 'Atividade 46'
+    TabOrder = 10
+    OnClick = btnAtividade46Click
+  end
 end
